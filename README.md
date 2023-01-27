@@ -12,7 +12,7 @@ A few basic functions for a Repeater Controller:
     with either internal or external module.  
        
 
-All of this can be done with a few logic gates and transistors. Today's low cost microcontroller boards have these resources and more included. Arduino UNO or Nano boards only need a sketch to run their hardware. I chose to include the CW identifier in the Repeater Controller thereby eliminating the need for an external module.
+All of this can be done with a few logic gates and transistors. Today's low cost microcontroller boards have these resources and more included. I decided to use an Arduino board. Arduino UNO or NANO boards only need a sketch to run their hardware. For my development and testing I used a cheap NANO board. I chose to include the CW identifier in the Repeater Controller thereby eliminating the need for an external module.
 
 A Repeater Controller scenario: 
 At initial contact Repeater Controller (RC) needs to start a time out timer and the Identifier (IDer) timer. The two timers will run independently. The (RC) monitors the receiver for carrier lose. If the incoming  carrier drops it closes the squelch and starts the Squelch tail timer which sends a beep and turns off the transmitter when the Squelch tail timer expires. 
