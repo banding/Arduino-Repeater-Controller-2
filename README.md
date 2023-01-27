@@ -42,7 +42,8 @@ At the end of the ID timer cycle it returns a value to main sketch. The main ske
 Morse.msg() contains a call sign (AA5OY). Please use the Alpha-numeric list at the end of Morse.cpp file to copy and past your call sign in between 
 
 ////// Call Sign Begins  //////
-                and  
+                
+                
 /////// Call Sign Ends  //////
 
 For best results add a Wspace(); in between each letter/number following the example message.
