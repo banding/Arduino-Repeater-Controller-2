@@ -100,4 +100,4 @@ void Morse::msg()
 
 The Morse class also has a Beep() method which the RC uses for signaling at the end of a time out. 
 
-Beside the conventional repeater and duplexer combo.  Using Arduino controller and two handhelds could be a simple way to activate area temporarily or in an emergency. The two handhelds would have be to be separated either by bands or distance (vertical or horizontal). Doing so would prevent the transmitter from  desensitizing the receiver.
+Beside the conventional repeater and duplexer combo.  Using Arduino controller and two handhelds could be a simple way to activate area temporarily or in an emergency. The two handhelds would have be to be separated either by bands or vertical or horizontal distance. Doing so would prevent the transmitter from desensitizing the receiver.
