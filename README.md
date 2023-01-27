@@ -2,9 +2,14 @@
 Arduino Repeater Controller version 2
        
 A few basic functions for a Repeater Controller: 
-    1. Needs to monitor the receiver for a carrier. If a carrier is detected open the squelch and connect the  receiver’s audio to the transmitter’s input and lastly turn on the transmitter.
+
+    1. Needs to monitor the receiver for a carrier. If a carrier is detected open the squelch and connect the  
+    receiver’s audio to the transmitter’s input and lastly turn on the transmitter.
+    
     2. At the end it needs to close the squelch, perhaps add a short squelch tail and turn off the transmitter.
-    3. There's a need to Identify the repeater usually with a CW message. A CW Identifier can be added with either internal or external module.  
+    
+    3. There's a need to Identify the repeater usually with a CW message. A CW Identifier can be added 
+    with either internal or external module.  
        
 
 All for this can be done with a few logic gates and transistors. On Today's  low cost microcontroller  boards these resources are included. Arduino UNO or Nano boards only needs a sketch to run their hardware. I chose to include the CW identifier in the Repeater Controller thereby eliminating the need for a external module.
@@ -30,7 +35,7 @@ Wait SQT(3, 2000); // Squelch tail timer = third timer 3, (2000 = 2 seconds)
 Here’s the instantiation of the Wait class from which is creates three objects: TOT(1, 180000), ID(2, 600000) and SQT(3, 2000) each timer is independent of each other. Each timer uses the first parameter when it returns to main sketch for additional processing. Don’t change the first number. The second parameter is the timer length in milliseconds and can be change as needed.
 
 The morse code class is described at Arduino site in “Writing a Library for Arduino”
-Docs webpage.  Arduino Documents
+Docs webpage.  https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide
 
   Morse module is a basic CW Identifier. 
   Library for flashing Morse code.
@@ -59,17 +64,29 @@ void Morse::msg()
   digitalWrite(10, HIGH); // turn trx on
 
   ////// Call Sign Begins  //////
+  
   dot(); dash(); //'A'
+  
   Wspace();
+  
   dot(); dash(); //'A'
+  
   Wspace();
+  
   dot(); dot(); dot(); dot(); dot(); // '5'
+  
   Wspace();
+  
   dash(); dash(); dash(); // 'O'
+  
   Wspace();
+  
   dash();  dot();  dash(); dash(); // 'Y'
+  
   Wspace();
+  
   /////// Call Sign Ends  //////
+  
 
   if (digitalRead(12) == true)
   {
