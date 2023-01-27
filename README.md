@@ -35,13 +35,12 @@ Wait SQT(3, 2000); // Squelch tail timer = third timer 3, (2000 = 2 seconds)
 Here’s the instantiation of the Wait class from which is creates three objects: TOT(1, 180000), ID(2, 600000) and SQT(3, 2000) each timer is independent of each other. Each timer uses the first parameter when it returns to main sketch for additional processing. Don’t change the first number. The second parameter is the timer length in milliseconds and can be change as needed.
 
 The morse code class is described at Arduino site in “Writing a Library for Arduino”
+
 Docs webpage.  https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide
 
-  Morse module is a basic CW Identifier. 
-  Library for flashing Morse code.
+  Morse module is a basic CW Identifier. A Library for flashing Morse code.
   Created by David A. Mellis, November 2, 2007.
-  Modified by B. Anding , November 1, 2022
-  added tone, CW outputs and transmitter control.
+  Modified by B. Anding , November 1, 2022  added tone, CW outputs and transmitter control.
 
 At the end of the ID timer cycle it returns a value to main sketch. The main sketch uses the return value to call Morse.msg() method. Morse.msg() turns on transmitter and plays the CW message and then turns off the transmitter. 
 Morse.msg() contains a call sign (AA5OY). Please use the Alpha-numeric list at the end of Morse.cpp file to copy and past your call sign in between 
