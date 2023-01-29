@@ -1,7 +1,7 @@
-# Repeater-Controller-2
+# Arduino Repeater-Controller-2
 Arduino Repeater Controller version 2
        
-A few basic functions for a Repeater Controller: 
+A few basic functions for a Ham Repeater Controller: 
 
     1. Needs to monitor the receiver for a carrier. If a carrier is detected open the squelch and connect the  
     receiver’s audio to the transmitter’s input and lastly turn on the transmitter.
