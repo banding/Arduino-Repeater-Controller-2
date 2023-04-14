@@ -105,4 +105,4 @@ Beside the conventional repeater and duplexer combo.  Using Arduino controller a
 There so many different radios with so many interfaces it is impossible to cover the details of them all.
 I have poster a schematic for an audio interface that I've used on several repeaters and link radios in the past.
 
-file: https://github.com/banding/Arduino-Repeater-Controller-2/Rept_Cntl_Sw.png
+file: https://github.com/banding/Arduino-Repeater-Controller-2/blob/main/Rept_Cntl_Sw.png
