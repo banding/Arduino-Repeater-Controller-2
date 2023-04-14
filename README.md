@@ -101,3 +101,8 @@ void Morse::msg()
 The Morse class also has a Beep() method which the RC uses for signaling at the end of a time out. 
 
 Beside the conventional repeater and duplexer combo.  Using Arduino controller and two handhelds could be a simple way to activate area temporarily or in an emergency. The two handhelds would have be to be separated either by bands or vertical or horizontal distance. Doing so would prevent the transmitter from desensitizing the receiver.
+
+There so many different radios with so many interfaces it is impossible to cover the details of them all.
+I have poster a schematic for an audio interface that I've used on several repeaters and link radios in the past.
+
+file: https://github.com/banding/Arduino-Repeater-Controller-2/Rept_Cntl_Sw.png
